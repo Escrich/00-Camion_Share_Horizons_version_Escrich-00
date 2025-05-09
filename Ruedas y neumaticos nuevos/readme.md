@@ -29,3 +29,8 @@ En este conjunto aparecen las ruedas diseñadas especificamente para el camión,
   para montarla no es necesario usar ningun tipo de pegamento, va simplemente deslizada en la cubierta y los aros sirven, además, para su correcto posicionamiento lateral.
 
   Está hecha en TPU de 95A.
+
+
+<sub> 
+20250509 Jose M. Escrich 
+</sub>
