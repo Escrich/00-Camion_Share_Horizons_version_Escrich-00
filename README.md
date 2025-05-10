@@ -6,6 +6,20 @@ La idea de mejorar, (desde mi punto de vista), el camión, no es porque fuese un
 
 Aquí os traigo los diseños modificados, los he grabado en formato .step, porque es un buen formato de intercambio, que pueden abrir la mayoría de programas de diseño, e incluso directamente los laminadores.
 
+      
+
+
+> [!NOTE]
+> Toda la información del proyecto original, está en:
+> 
+> https://makerworld.com/es/models/903977#profileId-863654
+>
+> https://cad.onshape.com/documents/0da7019aae1737c3977f49da/w/1bc25fe6fd6783f9f0ffa83a/e/cbea3b41cde89c5ffeedc16a?renderMode=0&uiState=6768307cef9a472f708bf9d7
+>
+> https://www.youtube.com/shorts/hSA0gdp2WEo
+>
+> https://www.youtube.com/@SHAREHORIZONS
+
 <sub> 
 20250509 Jose M. Escrich 
 </sub>
