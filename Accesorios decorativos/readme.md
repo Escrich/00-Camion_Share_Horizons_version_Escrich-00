@@ -44,6 +44,12 @@ Todo el conjunto va sujeto con dos tornillos de M2'5, que vienen desde la pieza 
 Las luces propiamente dichas, en ambos camiones, están impresas en Transparent PETG, y los soportes, en el caso del camión de bomberos es PETG, pero en el caso del camióncito con antena, se trata de nuevo de PLA CF.
 
 
+### Tapa leds gruesa
+
+Es la misma tapa original, pero aumentada en grosor en un 50%
+
+Está impresa en un solo color, usando transparent PETG
+
 <sub> 
 20250509 Jose M. Escrich 
 </sub>
