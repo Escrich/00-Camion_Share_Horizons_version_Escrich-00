@@ -51,5 +51,5 @@ Es la misma tapa original, pero aumentada en grosor en un 50%
 Está impresa en un solo color, usando transparent PETG
 
 <sub> 
-20250509 Jose M. Escrich 
+20250510 Jose M. Escrich 
 </sub>
