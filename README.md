@@ -6,8 +6,6 @@ La idea de mejorar, (desde mi punto de vista), el camión, no es porque fuese un
 
 Aquí os traigo los diseños modificados, los he grabado en formato .step, porque es un buen formato de intercambio, que pueden abrir la mayoría de programas de diseño, e incluso directamente los laminadores.
 
-      ![image](https://github.com/user-attachments/assets/01e574a5-bc30-4114-b0a3-026620797a81)
-
 
 
 > [!NOTE]
