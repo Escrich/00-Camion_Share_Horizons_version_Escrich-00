@@ -8,6 +8,8 @@ Aquí os traigo los diseños modificados, los he grabado en formato .step, porqu
 
 
 
+
+
 > [!NOTE]
 > Toda la información del proyecto original, está en:
 > 
