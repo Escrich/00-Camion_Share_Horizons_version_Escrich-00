@@ -1,9 +1,12 @@
-# Notas de trabajo
+# Piezas no reformadas
 
-Estas son mis notas, escritas a mano sobre el PDF del proyecto original, algunas las he ido pasando a limpio y las he reflejado sobre el propio PDF, que ha quedado un poco caotico, también he completado el documento, 
-con instrucciones que pueden ayudar a quien esté pensando en construir el famoso camioncito, 
-para que le sea fácil y divertido, de paso, he añadido instrucciones acerca del uso y funcionamiento de las tiras de led Neopixel, 
-y alguna que otra cosa mas, este documento sigue vivo, y puede cambiar en cualquier momento.
+Con el fin de tener todas las piezas juntas, aquí están las tres unicas piezas que no he reformado,
+los guardabarros, porque me parece un diseño muy bonito, y la tapa trasera porque no he tenido necesidad, ya que yo realmente no la uso, 
+al poner la rueda de repuesto atrás, la tapa queda completamente inutilizada, y el tornillo de la rueda, no se puede sacar desde fuera, ya que además del inserto metálico, 
+lleva por dentro una arandela de ala ancha, y una tuerca M3 autoblocante, lo que hace necesario desmontar el camión para quitar la tapa.
+
+Por otra parte no es necesario quitar la tapa trasera, ya que he añadido un puerto gobernado por el interruptor principal, 
+que permite poder cargar la batería desde fuera, sin necesidad de abrir el camión.
 
 www.github.com/escrich
 
