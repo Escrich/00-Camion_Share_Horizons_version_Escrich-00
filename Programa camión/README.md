@@ -1,29 +1,28 @@
-# Mando a distancia Escrich
+# Programa del camión Share Horizons versión Escrich
 
-Aquí podeis encontrar toda la información relativa al mando a distancia, desde el programa, lleno de comentarios con los cambios efectuados y una explicacion de dichos cambios en la mayoría de los casos, 
-hasta las instrucciones de montaje y puesta en marcha paso a paso.
+Aquí podeis encontrar toda la información relativa al programa del camión, una vez reformado por mi, que insisto, no es mejor ni peor, tan solo diferente al original, y que conserva una buena parte de lo que ya había.
 
-Tambien están, por supuesto, los ficheros .step de todas las piezas que componen el mando a distancia, pero lo que mas trabajo me ha costado, 
-es la guía de construcción, donde se explica paso a paso como construirlo, como y cuando programarlo, y como cablearlo, ajustarlo y hacerlo funcionar.
+La forma de programarlo, que está descrita paso a paso, es exactamente la misma para el DOIT ESP32 DEV KIT V1, que para el Wemos D1 Mini ESP32, que es el micro que lleva mi versión del mando a distancia,
+solo hay que elegir la placa y puerto correctos, hay una buena descrpcion de como hacerlo en las instrucciones del mando a distancia. 
 
-La forma de programarlo, que está descrita paso a paso, es exactamente la misma que para el DOIT ESP32 DEV KIT V1, pero eligiendo una placa, o la otra, ya que el microcontrolador que lleva dentro, 
-un Wemos D1 Mini ESP32, es 100% compatible, con el ESP32 del diseño original.
+Por cierto el Wemos D1 Mini ESP32, es 100% compatible, con el ESP32 del diseño original.
 
 
-Programarlo es tan simple como conectar un cable USB entre tu ordenador y el Wemos D1 Mini, cargar el programa que encontrarás aquí, en el entorno Arduino, si es que no lo habías hecho antes, 
-elegir la placa, (Wemos D1 Mini ESP32) y el puerto correctos, 
-asegurarte de que has puesto la mac address de la placa de tu camión correctamente, y pulsar en el entorno Arduino el icono de compilar y cargar, 
+Programarlo es tan simple como conectar un cable USB entre tu ordenador y el ESP32, cargar el programa que encontrarás aquí, en el entorno Arduino, si es que no lo habías hecho antes, 
+elegir la placa, (DOIT ESP32 DEV KIT V1) y el puerto correctos, 
+y pulsar en el entorno Arduino el icono de compilar y cargar, 
 si lo has hecho todo bien, el sistema saldrá andando a la primera, que por otra parte, es lo mas normal.
 
 
 
 
 
-> [!CAUTION]
-> Al construir el mando a distancia, no olvides, antes de aplicar tension al Wemos D1 MINI, haber ajustado externamente la fuente de alimentación, para una tensión de salida de entre 5'0 Voltios, y 5'1 Voltios.
-> si no lo haces así, puedes destruir el microcontrolador, aplicándole una tensión mas alta de la que puede aguantar.
-> 
-> https://www.github.com/escrich
+> [!TIP]
+> Aunque aquí te deje alguna explicación sobre el software del camión, la mayor parte de las reformas, por no decír todas,
+> están comentadas y documentadas con texto y comentarios, dentro del propio programa, (no me gusta llamarle "sketch")
+>
+
+https://www.github.com/escrich
 
 
 <sub> 
