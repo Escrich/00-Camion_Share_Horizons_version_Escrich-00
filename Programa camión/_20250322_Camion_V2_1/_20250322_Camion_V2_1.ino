@@ -9,9 +9,17 @@
 //   He recalculado los angulos de la dirección, haciendolos simetricos
 //   Tambien se han añadido rutinas para el cambio de color de los leds en función de la dirección
 //   Añadidos nuevos leds Neopixel en el canal 5
-//   Quizás añada algún indicador acustico
+//   De momento he deshechado la idea de poner algún tipo de elemento acustico
+//   He traducido la mayoría de los comentarios, para hacerlo mas didactico para los que están empezando
+//
+//   Gracias Share horizons, Gracias Creality
 //
 //***************************************************************************************************
+
+
+// ----------------------------------------------------------------------------
+// Incluye las librerías que vamos a necesitar utilizar en el proyecto
+// ----------------------------------------------------------------------------
 
 #include <esp_now.h>
 #include <WiFi.h>
@@ -19,34 +27,41 @@
 #include <Adafruit_NeoPixel.h>
 
 #define LED_PIN 2  // led en Wemos D1 Mini ESP32, mismo pin en DOIT ESP32 Devkit V1
-bool led = LOW;  // variable para encendido del led
+bool led = LOW;    // variable para encendido del led
 
 #define SIGNAL_TIMEOUT 1000  // This is signal timeout in milli seconds. We will reset the data if no signal
 unsigned long lastRecvTime = 0;
 
-//SERVOS    create servo object to control a servo
-// 16 servo objects can be created on the ESP32
+// ----------------------------------------------------------------------------
+// SERVOS, crea como objetos los servos existentes, para poder ser controlados como servos
+// ----------------------------------------------------------------------------
+// En un ESP32 puedes definir hasta 16 servos
+
 Servo BrazoDerecho;
 Servo BrazoIzquierdo;
 
 //Posiciones de los servos
 int PosBrazoDerecho = 0;
 int PosBrazoIzquierdo = 0;
-#define tiempobrazos 300  //tiempo de espera para los servos de los brazos
+#define tiempobrazos 300  // Tiempo de espera para los servos de los brazos
 
-#define PIN_WS2812B 21  // El pin GPIO21 del ESP32 conecta con tira deleds del tipo WS2812B, a la que llamaremos ws2812b
-#define NUM_PIXELS 8    // 12 // The number of LEDs (pixels) on WS2812B LED strip
+// ----------------------------------------------------------------------------
+// Definición del canal Neopixel que controla la tira led de debajo del camión
+// ----------------------------------------------------------------------------
+
+#define PIN_WS2812B 21  // El pin GPIO21 del ESP32 conecta con tira de leds del tipo WS2812B, a la que llamaremos ws2812b
+#define NUM_PIXELS 8    // 12 // Numero de LEDs (pixels) en una tira led del tipo WS2812B
 //#define TIMERPIXELS 500
 
 Adafruit_NeoPixel ws2812b(NUM_PIXELS, PIN_WS2812B, NEO_GRB + NEO_KHZ800);
 
 
 // ----------------------------------------------------------------------------
-
 // Nuevo canal Neopixel el equivalente a una tira de cuatro leds
+// ----------------------------------------------------------------------------
 
 #define ledsBomberosPin 5  // El pin GPIO5 del ESP32 conecta con tira deleds del tipo WS2812B, a la que llamaremos ledBomberos
-#define numLeds 4          // The number of LEDs (pixels) on WS2812B LED strip
+#define numLeds 4          // Numero de LEDs (pixels) en una tira led del tipo WS2812B, en este caso son leds sueltos, conectados como una tira de 4 leds
 
 Adafruit_NeoPixel ledBomberos(numLeds, ledsBomberosPin, NEO_GRB + NEO_KHZ800);
 
@@ -57,7 +72,8 @@ int pasoActual = 0;     // paso actual
 bool parado = LOW;      // variable que muestra si el camión está parado o en marcha
 
 // ----------------------------------------------------------------------------
-
+// Definicion de pines de conexión
+// ----------------------------------------------------------------------------
 #define BrazoDerechoPin 32
 #define BrazoIzquierdoPin 33
 
@@ -81,7 +97,7 @@ bool parado = LOW;      // variable que muestra si el camión está parado o en 
 // B : Backwards; Atras
 
 // La tabla de la verdad para las entradas,
-// uno y dos para un motor,
+// uno y dos para el grupo de motores de la Izquierda,
 // es la siguiente:
 
 //  IN 1  IN 2  MOTOR
@@ -90,7 +106,7 @@ bool parado = LOW;      // variable que muestra si el camión está parado o en 
 //  LOW   HIGH  ADELANTE
 //  HIGH  HIGH  PARADO
 
-// o tres y cuatro para el otro,
+// o tres y cuatro para el grupo de motores de la derecha,
 // es la siguiente:
 
 //  IN 4  IN 3  MOTOR
@@ -101,6 +117,9 @@ bool parado = LOW;      // variable que muestra si el camión está parado o en 
 
 // ============================================================================================
 
+// ----------------------------------------------------------------------------
+// Definición de variables
+// ----------------------------------------------------------------------------
 
 int Conexionperdida = 0;
 
@@ -125,7 +144,10 @@ struct PacketData {
 };
 PacketData receiverData;
 
-// callback function that will be executed when data is received
+// ----------------------------------------------------------------------------
+// Función de rellamada que se ejecuta cuando se reciben datos
+// ----------------------------------------------------------------------------
+
 void OnDataRecv(const esp_now_recv_info_t *info, const uint8_t *incomingData, int len) {
   if (len == 0) {
     return;
@@ -136,6 +158,10 @@ void OnDataRecv(const esp_now_recv_info_t *info, const uint8_t *incomingData, in
   Serial.println(inputData);
   lastRecvTime = millis();
 }
+
+// ----------------------------------------------------------------------------
+// Escalado de lso datos del Joystick
+// ----------------------------------------------------------------------------
 
 void MapeoJoystick() {
   angulo = receiverData.AnguloValue;
@@ -215,12 +241,11 @@ void BucleBomberos() {
   }
 }
 
-
 // ----------------------------------------------------------------------------
 
-//=======================================================================================
+// ----------------------------------------------------------------------------
 // Rutina que genera todas las señales intermitentes para ser usadas donde se necesiten
-//=======================================================================================
+// ----------------------------------------------------------------------------
 
 void Intermitencias() {
   // Generación de señal intermitente
@@ -239,7 +264,7 @@ void Intermitencias() {
 
 }  // Fin de Intermitencias()
 
-//*****************************************************************************************************
+// ----------------------------------------------------------------------------
 
 //GRAFCET NEOPIXEL
 
@@ -251,10 +276,10 @@ void PixelInicializar() {
 
 void BucleNeopixel() {
   switch (PixelEstado) {
-    case 0:             //Inicialización
-     // ws2812b.clear();  // set all pixel colors to 'off'. It only takes effect if pixels.show() is called
-     // ws2812b.show();   // update to the WS2812B Led Strip
-                        // PixelTimer = millis();  // No parece que se use
+    case 0:  //Inicialización
+             // ws2812b.clear();  // set all pixel colors to 'off'. It only takes effect if pixels.show() is called
+             // ws2812b.show();   // update to the WS2812B Led Strip
+             // PixelTimer = millis();  // No parece que se use
       PixelEstado = 1;
       break;
 
@@ -290,6 +315,7 @@ void BucleNeopixel() {
 
 // -------------------------------------------------------------------
 // Rutinas para manejo de leds en función de la dirección, para 8 leds
+// -------------------------------------------------------------------
 
 void ledsAdelante() {
 
@@ -409,6 +435,10 @@ void IniMovimiento() {
   TimerMovimiento = 0;
 }
 
+// ----------------------------------------------------------------------------
+// Rutinas de movimiento en función del angulo que les llega desde el Joystick
+// ----------------------------------------------------------------------------
+
 void Movimiento() {
   // He cambiado el reparto de angulos haciendolos simetricos, que por alguna razón no lo eran
   parado = LOW;  // reseteamos el flag que indica si el camión está parado o en marcha
@@ -477,6 +507,10 @@ void Movimiento() {
   }
 }
 
+// ----------------------------------------------------------------------------
+// Rutinas de marcha y dirección de los motores
+// ----------------------------------------------------------------------------
+
 void MLparado() {  //Motores Izquierda Parados
   analogWrite(MotorENAPinL, 0);
   digitalWrite(MotorIN1PinLB, LOW);
@@ -521,7 +555,11 @@ void atras() {  //Camión atras
 }
 
 void setup() {
-  // put your setup code here, to run once:
+  // En esta sección el código que pongas, solo se va a ejecutar una vez, al arranque:
+
+  // ----------------------------------------------------------------------------
+  // Definición de entradas y salidas
+  // ----------------------------------------------------------------------------
   pinMode(MotorENAPinL, OUTPUT);
   pinMode(MotorIN1PinLB, OUTPUT);
   pinMode(MotorIN2PinLF, OUTPUT);
@@ -531,13 +569,25 @@ void setup() {
 
   pinMode(LED_PIN, OUTPUT);
 
+  // ----------------------------------------------------------------------------
+  // Arranque del canal serie para comunicación por USB
+  // ----------------------------------------------------------------------------
   Serial.begin(115200);
 
+  // ----------------------------------------------------------------------------
+  // Arranque del canal wifi y definición del modo de trabajo
+  // ----------------------------------------------------------------------------
   WiFi.mode(WIFI_STA);
 
   delay(1000);
 
-  // Init ESP-NOW
+
+
+  // ----------------------------------------------------------------------------
+  // Inicializa la comunicacion ESP-NOW,
+  // ----------------------------------------------------------------------------
+
+  // El ESP-NOW es un protocolo, que puede transportar poca información, tan solo 250 bytes, pero consigue un alcance del orden de 200 metros.
   if (esp_now_init() != ESP_OK) {
     Serial.print("Error initializing ESP-NOW\n");
     return;
@@ -547,7 +597,7 @@ void setup() {
   // standard 50 hz servo
   BrazoDerecho.setPeriodHertz(50);
   BrazoIzquierdo.setPeriodHertz(50);
-  // attaches the servos
+  // Conecta los servos
   BrazoDerecho.attach(BrazoDerechoPin, 500, 2500);
   BrazoIzquierdo.attach(BrazoIzquierdoPin, 500, 2500);
 
@@ -559,8 +609,11 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  //Check Signal lost.
+  // Aquí se pone el código que ha de ejecutarse, repetidamente, a cada ciclo de programa:
+
+  // ----------------------------------------------------------------------------
+  // Comprobación de pérdida de señal.
+  // ----------------------------------------------------------------------------
   unsigned long now = millis();
 
   if (now - lastRecvTime > SIGNAL_TIMEOUT)  // SE HA PERDIDO LA CONEXION CON EL MANDO
@@ -575,9 +628,18 @@ void loop() {
     Movimiento();
     Empujar();
   }
+
+  // ----------------------------------------------------------------------------
+  //  Llamadas a diferentes sub-rutinas
+  // ----------------------------------------------------------------------------
+
   BucleNeopixel();
   BucleBomberos();
   Intermitencias();
+
+  // ----------------------------------------------------------------------------
+  // Salida de información de proceso por pantalla
+  // ----------------------------------------------------------------------------
 
   //  /*
   // estos son mis datos en pantalla
@@ -606,21 +668,27 @@ void loop() {
 
   Serial.println("");
 
+  // ----------------------------------------------------------------------------
+  // Muestra la Mac address
+  // ----------------------------------------------------------------------------
+
+  //Quita la linea justo debajo si quieres ver la mac address en el monitor serie, recuerda ponerlas despues para no perder tiempo de proceso
   /*
   Serial.println("Mac address del dispositivo:");
   Serial.println(WiFi.macAddress());
   */
+  //Quita la linea justo encima si quieres ver la mac address en el monitor serie, recuerda ponerlas despues para no perder tiempo de proceso
 
   // */
 
-    // Encendido del led azul de la placa
-  // ===================================
+  // ----------------------------------------------------------------------------
+  // Encendido del led azul de la placa
+  // ----------------------------------------------------------------------------
   if (led == LOW) {
     led = HIGH;
   } else {
     led = LOW;
   }
   digitalWrite(LED_PIN, led);
-  // ===================================
-  
+  // ----------------------------------------------------------------------------
 }
