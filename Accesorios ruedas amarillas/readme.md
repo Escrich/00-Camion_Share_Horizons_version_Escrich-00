@@ -11,6 +11,7 @@ Aquí se incluyen los siguientes elementos:
 
 - Un mangón para la rueda que permite alejarla del chasis, al tiempo que hace tope, y refuerza el conjunto del eje del motor y la parte de conexión de la propia rueda, haciendo que todo el conjunto sea mas robusto, esta pieza ha de ser impresa en PETG.
 
+www.github.com/escrich
 
 <sub> 
 20250509 Jose M. Escrich 
