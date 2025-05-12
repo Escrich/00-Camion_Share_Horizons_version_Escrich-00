@@ -4,6 +4,12 @@
 //
 //  emite usando el protocolo ESPNOW al receptor que es el camión
 //
+//  Totalmente operacional en ambos modelos de mandos a distancia, 
+//  posiblemente necesite retocar algunos parametros, 
+//  en función de la posición fisica del Joystick, respecto al propio mando en si.
+//
+//  Ligeramente reformado por Jose M. Escrich - 20250512
+//
 // -------------------------------------------------------------------------------
 
 
@@ -13,21 +19,21 @@
 #include <math.h>
 
 // Definición de pines
-#define X_AXIS_PIN 32
-#define Y_AXIS_PIN 33
-#define SWITCH_PIN 25
-#define LED_PIN 2  // led en Wemos D1 Mini ESP32, mismo pin en DOIT ESP32 Devkit V1
+#define X_AXIS_PIN 32 // Los numeros de pin se mantienen, aunque las funciones de X e Y se intercambian
+#define Y_AXIS_PIN 33 // Los numeros de pin se mantienen, aunque las funciones de X e Y se intercambian
+#define SWITCH_PIN 25 // Interruptor del Joystick, se activa al pulsarlo
+#define LED_PIN 2     // led en Wemos D1 Mini ESP32, mismo pin en DOIT ESP32 Devkit V1
 
 // MAC DEL RECEPTOR
 // Comentar la linea que no se use
-//uint8_t receiverMacAddress[] = { 0xCC, 0x50, 0xE3, 0xxx, 0xxx, 0xxx };  // CC:50:E3:xx:xx:xx // Escrich // 20250317
-// CC:50:E3:xx:xx:xx Camión de bomberos
+//uint8_t receiverMacAddress[] = { 0xAA,0xAA,0xAA,0xAA,0xAA,0xAA };  // AA:AA:AA:AA:AA:AA // Escrich // 20250317
+// AA:AA:AA:AA:AA:AA Camión de bomberos
 
-uint8_t receiverMacAddress[] = { 0xEC, 0x62, 0x60, 0xxx, 0xxx, 0xxx };  // EC:62:60:xx:xx:xx // Escrich // 20250317
-// EC:62:60:xx:xx:xx Camión con radar
+uint8_t receiverMacAddress[] = { 0xAA,0xAA,0xAA,0xAA,0xAA,0xAA };  // AA:AA:AA:AA:AA:AA // Escrich // 20250317
+// AA:AA:AA:AA:AA:AA Camión con radar
 
 
-
+// Definición de variables
 double angulo;
 double opuesto;
 double continuo;
@@ -36,7 +42,9 @@ double modulo;
 double ejeX;  // Usados solo para debug
 double ejeY;  // Usados solo para debug
 
-bool led = LOW;  // variable para encendido del led
+bool led = LOW;  // variable para encendido del led que va en la placa
+
+// Definición de la estructura de datos, que envía los valores del Joystick al camión
 
 struct PacketData {
   int AnguloValue;
@@ -107,8 +115,8 @@ void setup() {
   esp_now_register_send_cb(OnDataSent);
 
   // Register peer
-  //esp_now_peer_info_t peerInfo;
-  esp_now_peer_info_t peerInfo = {};
+  //esp_now_peer_info_t peerInfo; // Linea original
+  esp_now_peer_info_t peerInfo = {}; // Añadido en la ultima versión de Shere horizons para evitar bloqueos
   memcpy(peerInfo.peer_addr, receiverMacAddress, 6);
   peerInfo.channel = 0;
   peerInfo.encrypt = false;
@@ -192,11 +200,11 @@ void loop() {
 
   esp_err_t result = esp_now_send(receiverMacAddress, (uint8_t *)&data, sizeof(data));
   if (result == ESP_OK) {
-    //Serial.println("Sent with success"); // volver
+    //Serial.println("Sent with success"); // Texto en el terminal eliminado por claridad
   } else {
-    // Serial.println("Error sending the data"); // volver
+    // Serial.println("Error sending the data"); // Texto en el terminal eliminado por claridad
   }
-  delay(150);  // # 200 # Reducir
+  delay(150);  // # 200 # Reducir este valor hace que los datos de el mando se envían mas veces por segundo
 
   // Encendido del led azul de la placa
   // ===================================
