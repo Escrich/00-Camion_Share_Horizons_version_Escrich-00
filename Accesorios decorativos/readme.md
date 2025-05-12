@@ -50,6 +50,8 @@ Es la misma tapa original, pero aumentada en grosor en un 50%
 
 Está impresa en un solo color, usando transparent PETG
 
+www.github.com/escrich
+
 <sub> 
 20250510 Jose M. Escrich 
 </sub>
