@@ -289,7 +289,7 @@ void BucleNeopixel() {
 }
 
 // -------------------------------------------------------------------
-// Rutinas para manejo de leds en función de la dirección, para 6 leds
+// Rutinas para manejo de leds en función de la dirección, para 8 leds
 
 void ledsAdelante() {
 
