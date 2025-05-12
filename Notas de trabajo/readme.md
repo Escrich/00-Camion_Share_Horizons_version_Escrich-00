@@ -5,6 +5,8 @@ con instrucciones que pueden ayudar a quien esté pensando en construir el famos
 para que le sea fácil y divertido, de paso, he añadido instrucciones acerca del uso y funcionamiento de las tiras de led Neopixel, 
 y alguna que otra cosa mas, este documento sigue vivo, y puede cambiar en cualquier momento.
 
+www.github.com/escrich
+
 <sub> 
 20250510 Jose M. Escrich 
 </sub>
