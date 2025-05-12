@@ -1,25 +1,23 @@
-# Camion Share Horizons versión Escrich
+# Mando a distancia Escrich
 
-Bueno, tal como prometí, este es el repositorio de GitHub, donde he puesto todas las modificaciones que le he hecho al camión de Share Horizons, es posible que lo publique sin terminar aún, y que en los próximos días vaya añadiendo nueva información.
+Aquí podeis encontrar toda la información relativa al mando a distancia, desde el programa, lleno de comentarios con los cambios efectuados y una explicacion de dichos cambios en la mayoría de los casos, 
+hasta las instrucciones de montaje y puesta en marcha paso a paso.
 
-La idea de mejorar, (desde mi punto de vista), el camión, no es porque fuese un mal diseño, sino, porque pensé que había ciertas cosas que con pequeñas modificaciones podrían funcionar aún mejor.
+Tambien están, por supuesto, los ficheros .step de todas las piezas que componen el mando a distancia, pero lo que mas trabajo me ha costado, 
+es la guía de construcción, donde se explica paso a paso como construirlo, cuando programarlo, y como cablearlo, ajustarlo y hacerlo funcionar.
 
-Aquí os traigo los diseños modificados, los he grabado en formato .step, porque es un buen formato de intercambio, que pueden abrir la mayoría de programas de diseño, e incluso directamente los laminadores.
-
-
-
+La forma de programarlo, no está descrita, pero es exactamente la misma que para el DOIT ESP32 DEV KIT V1, ya que el microcontrolador que lleva dentro, un Wemos D1 Mini ESP32, es 100% compatible, con el ESP32 del diseño original, es tan simple como conectar un cable USB entre tu ordenador y el Wemos D1 Mini y pulsar en el entorno Arduino el icono de compilar y cargar, despues de haber elegido la placa y el puerto correctos.
 
 
-> [!NOTE]
-> Toda la información del proyecto original, está en:
+
+
+
+> [!CAUTION]
+> Al construir el mando a distancia, no olvides, antes de aplicar tension al Wemos D1 MINI, haber ajustado externamente la fuente de alimentación, para una tensión de salida de entre 5'0 Voltios, y 5'1 Voltios.
+> si no lo haces así, puedes destruir el microcontrolador, aplicándole una tensión mas alta de la que puede aguantar.
 > 
-> https://makerworld.com/es/models/903977#profileId-863654
->
-> https://cad.onshape.com/documents/0da7019aae1737c3977f49da/w/1bc25fe6fd6783f9f0ffa83a/e/cbea3b41cde89c5ffeedc16a?renderMode=0&uiState=6768307cef9a472f708bf9d7
->
-> https://www.youtube.com/shorts/hSA0gdp2WEo
->
-> https://www.youtube.com/@SHAREHORIZONS
+> https://www.github.com/escrich
+
 
 <sub> 
 20250509 Jose M. Escrich 
