@@ -241,7 +241,6 @@ void BucleBomberos() {
   }
 }
 
-// ----------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------
 // Rutina que genera todas las señales intermitentes para ser usadas donde se necesiten
