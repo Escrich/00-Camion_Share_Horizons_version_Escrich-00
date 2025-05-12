@@ -1,8 +1,9 @@
 # Camion Share Horizons versión Escrich
 
-Bueno, tal como prometí, este es el repositorio de GitHub, donde he puesto todas las modificaciones que le he hecho al camión de Share Horizons, es posible que lo publique sin terminar aún, y que en los próximos días vaya añadiendo nueva información.
+Bueno, tal como prometí, este es el repositorio de GitHub, donde he puesto todas las modificaciones, o al menos las que he recordado, que le he hecho al camión de Share Horizons.
 
-La idea de mejorar, (desde mi punto de vista), el camión, no es porque fuese un mal diseño, sino, porque pensé que había ciertas cosas que con pequeñas modificaciones podrían funcionar aún mejor.
+La idea de mejorar, (desde mi punto de vista), el camión, no es porque fuese un mal diseño, sino, porque pensé que había ciertas cosas que con pequeñas modificaciones podrían funcionar aún mejor, 
+lo cual era una buena excusa para ponerse a jugar, y crear piezas nuevas y buscarme así, nuevos problemas.
 
 Aquí os traigo los diseños modificados, los he grabado en formato .step, porque es un buen formato de intercambio, que pueden abrir la mayoría de programas de diseño, e incluso directamente los laminadores.
 
