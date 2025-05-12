@@ -11,7 +11,7 @@ Aquí os traigo los diseños modificados, los he grabado en formato .step, porqu
 
 
 > [!IMPORTANT]
-> La sección sobre el nuevo mando a distancia, constituye un nuevo proyecto por si sola, en esa sección, al igual que en muchas otras, hay mucho material didactico que puede ser muy util a los que estén empezando en el mundo del DIY, así como para ser usado incluso a nivel escolar, o en grupos de formación, he intentado en todo, ser lo mas didactico posible.
+> La sección sobre el nuevo mando a distancia, constituye un nuevo proyecto por si sola, en esa sección, al igual que en muchas otras, hay mucho material didactico, que puede ser muy util a los que estén empezando en el mundo del DIY, así como para ser usado incluso a nivel escolar, o en grupos de formación, he intentado en todo, ser lo mas didactico posible.
 
 
 > [!NOTE]
