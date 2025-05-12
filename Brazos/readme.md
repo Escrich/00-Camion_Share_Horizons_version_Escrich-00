@@ -20,6 +20,7 @@ En primer lugar está el brazo original, para poder comparar, después, viene la
 
 En el caso del camión de bomberos, los brazos están impresos en PETG, y en el camioncito con antena, están hechos con PLA CF.
 
+www.github.com/escrich
 
 <sub> 
 20250509 Jose M. Escrich 
