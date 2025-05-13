@@ -2,7 +2,7 @@
 
 Aquí se incluyen los siguientes elementos:
 
-- Un centrador para taladrar las ruedas amarillas en el punto correcto, este compopnente es solo un util, que no ha de montarse en ninguna parte del camión.
+- Un centrador para taladrar las ruedas amarillas en el punto correcto, este componente es solo un util, que no ha de montarse en ninguna parte del camión.
 
 - Un tapacubos, que ha de imprimirse en PETG, para que apoye el tornillo que sujeta el conjunto, e impide que se salga la rueda.
 
