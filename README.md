@@ -1,5 +1,11 @@
 # Camion Share Horizons versión Escrich
 
+<br>
+<p align="left">
+<img src="https://github.com/Escrich/00-Camion_Share_Horizons_version_Escrich-00/blob/master/Camion_Escrich.jpg" alt='Camión Escrich' width='70%'>
+</p>
+<br>
+
 Bueno, tal como prometí, este es el repositorio de GitHub, donde he puesto todas las modificaciones, o al menos las que he recordado, que le he hecho al camión de Share Horizons.
 
 La idea de mejorar, (desde mi punto de vista), el camión, no es porque fuese un mal diseño, sino, porque pensé que había ciertas cosas que con pequeñas modificaciones podrían funcionar aún mejor, 
