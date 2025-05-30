@@ -27,8 +27,17 @@ si a la larga ese formato supone un problema, no tengo inconveniente en volver a
 >
 > https://www.youtube.com/@SHAREHORIZONS
 
-www.github.com/escrich
+<br>
 
-<sub> 
-20250509 Jose M. Escrich 
+ 
+www.github.com/escrich
+  
+
+https://t.me/escrich
+  
+  
+https://www.tiktok.com/@josemescrich
+
+<sub>
+20250527 Jose M. Escrich 
 </sub>
