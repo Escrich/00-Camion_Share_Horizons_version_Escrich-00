@@ -1,5 +1,11 @@
 # Reforma del chasis
 
+<br>
+<p align="left">
+<img src="https://github.com/Escrich/00-Camion_Share_Horizons_version_Escrich-00/blob/master/Reformas%20chasis/estructura.jpg" alt='Estructura , chasis y demás elementos mecánicos' width='60%'>
+</p>
+<br>
+
 Esta es la parte mas visible, ya que además engloba las las piezas de mayor tamaño, las reformas que he hecho a las diferentes piezas, han sido las siguientes:
 
 - **Chasis V1;** En primer lugar empezamos por el propio chasis, las reformas efectuadas en el han sido varias, la primera, y mas importante, fué suplementar en 3 milimetros la posición de los motores,
@@ -37,7 +43,13 @@ Esta es la parte mas visible, ya que además engloba las las piezas de mayor tam
   entre cada motor y el chasis, y que hace de suplemento, para conseguir separar las ruedas del chasis, tal como describía al principio de este texto. 
   
   
+<br>
+
 www.github.com/escrich
+  
+https://t.me/escrich
+  
+https://www.tiktok.com/@josemescrich
 
 <sub> 
 20250510 Jose M. Escrich 
