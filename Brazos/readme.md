@@ -1,4 +1,11 @@
 # Brazos reforzados
+
+<br>
+<p align="left">
+<img src="https://github.com/Escrich/00-Camion_Share_Horizons_version_Escrich-00/blob/master/Brazos/brazos.jpg" alt='Versiones brazos, evolución' width='60%'>
+</p>
+<br>
+
 En este conjunto aparece el brazo original del lado derecho como referencia, solo he puesto los brazos del lado derecho por claridad, 
 generar el brazo izquierdo es tan simple como hacer un "mirror", (espejo), en cualquier programa de CAD, o en el propio slicer, todos son capaces de hacerlo.
 
@@ -20,7 +27,16 @@ En primer lugar está el brazo original, para poder comparar, después, viene la
 
 En el caso del camión de bomberos, los brazos están impresos en PETG, y en el camioncito con antena, están hechos con PLA CF.
 
+<br>
+
+ 
 www.github.com/escrich
+  
+
+https://t.me/escrich
+  
+  
+https://www.tiktok.com/@josemescrich
 
 <sub> 
 20250509 Jose M. Escrich 
