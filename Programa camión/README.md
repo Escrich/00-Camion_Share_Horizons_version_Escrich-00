@@ -2,7 +2,7 @@
 
 <br>
 <p align="left">
-<img src="https://github.com/Escrich/00-Camion_Share_Horizons_version_Escrich-00/blob/master/Programa%20cami%C3%B3n/programa%20camion.jpg" alt='Nprograma del camión' width='45%'>
+<img src="https://github.com/Escrich/00-Camion_Share_Horizons_version_Escrich-00/blob/master/Programa%20cami%C3%B3n/programa%20camion.jpg" alt='Programa del camión' width='45%'>
 </p>
 <br>
 
