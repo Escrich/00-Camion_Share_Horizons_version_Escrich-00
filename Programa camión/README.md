@@ -1,5 +1,11 @@
 # Programa del camión Share Horizons versión Escrich
 
+<br>
+<p align="left">
+<img src="https://github.com/Escrich/00-Camion_Share_Horizons_version_Escrich-00/blob/master/Programa%20cami%C3%B3n/programa%20camion.jpg" alt='Nprograma del camión' width='45%'>
+</p>
+<br>
+
 Aquí podeis encontrar información relativa al programa del camión, una vez reformado por mi, que insisto, no es mejor ni peor, tan solo diferente al original, y que conserva una buena parte de lo que ya había.
 
 - La forma de programarlo, que está descrita paso a paso, es exactamente la misma para el DOIT ESP32 DEV KIT V1, que para el Wemos D1 Mini ESP32, que es el micro que lleva mi versión del mando a distancia,
@@ -37,7 +43,14 @@ si lo has hecho todo bien, el sistema saldrá andando a la primera, que por otra
 > están comentadas y documentadas con texto y comentarios, dentro del propio programa, (no me gusta llamarle "sketch")
 >
 
-https://www.github.com/escrich
+
+<br>
+
+www.github.com/escrich
+  
+https://t.me/escrich
+  
+https://www.tiktok.com/@josemescrich
 
 
 <sub> 
