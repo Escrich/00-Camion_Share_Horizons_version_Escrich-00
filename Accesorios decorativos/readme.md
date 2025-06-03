@@ -1,5 +1,11 @@
 # Accesorios añadidos o modificados
 
+<br>
+<p align="left">
+<img src="https://github.com/Escrich/00-Camion_Share_Horizons_version_Escrich-00/blob/master/Accesorios%20decorativos/accesorios.jpg" alt='Accesorios decorativos' width='70%'>
+</p>
+<br>
+
 ### Pala excavadora
 
 Esta pala se basa totalmente en el diseño original, tan solo se le han añadido los dientes, y se han movido hacia el centro los dos grupos de taladros de sujección, disminuyendo la distancia entre taladros en ocho milimetros, 
@@ -50,7 +56,16 @@ Es la misma tapa original, pero aumentada en grosor en un 50%
 
 Está impresa en un solo color, usando transparent PETG
 
+<br>
+
+ 
 www.github.com/escrich
+  
+
+https://t.me/escrich
+  
+  
+https://www.tiktok.com/@josemescrich
 
 <sub> 
 20250510 Jose M. Escrich 
