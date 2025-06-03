@@ -1,5 +1,11 @@
 # Mando a distancia Escrich
 
+<br>
+<p align="left">
+<img src="https://github.com/Escrich/00-Camion_Share_Horizons_version_Escrich-00/blob/master/Mando%20a%20distancia/mando%20a%20distancia.jpg" alt='Mando a distancia versión Escrich' width='50%'>
+</p>
+<br>
+
 Aquí podeis encontrar toda la información relativa al mando a distancia, desde el programa, lleno de comentarios con los cambios efectuados y una explicacion de dichos cambios en la mayoría de los casos, 
 hasta las instrucciones de montaje y puesta en marcha paso a paso.
 
@@ -23,8 +29,14 @@ si lo has hecho todo bien, el sistema saldrá andando a la primera, que por otra
 > Al construir el mando a distancia, no olvides, antes de aplicar tension al Wemos D1 MINI, haber ajustado externamente la fuente de alimentación, para una tensión de salida de entre 5'0 Voltios, y 5'1 Voltios.
 > si no lo haces así, puedes destruir el microcontrolador, aplicándole una tensión mas alta de la que puede aguantar.
 > 
-> https://www.github.com/escrich
 
+<br>
+ 
+www.github.com/escrich
+  
+https://t.me/escrich
+  
+https://www.tiktok.com/@josemescrich
 
 <sub> 
 20250509 Jose M. Escrich 
