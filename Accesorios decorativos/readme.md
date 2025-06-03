@@ -2,7 +2,7 @@
 
 <br>
 <p align="left">
-<img src="https://github.com/Escrich/00-Camion_Share_Horizons_version_Escrich-00/blob/master/Accesorios%20decorativos/accesorios.jpg" alt='Accesorios decorativos' width='70%'>
+<img src="https://github.com/Escrich/00-Camion_Share_Horizons_version_Escrich-00/blob/master/Accesorios%20decorativos/accesorios.jpg" alt='Accesorios decorativos' width='60%'>
 </p>
 <br>
 
