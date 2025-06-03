@@ -13,6 +13,7 @@ lo cual era una buena excusa para ponerse a jugar, y crear piezas nuevas y busca
 
 Aquí os traigo los diseños modificados, los he grabado en formato .step, porque es un buen formato de intercambio, que pueden abrir la mayoría de programas de diseño, e incluso directamente los laminadores, 
 
+- 20250603 He añadido imagenes en cada sección, para ver de una manera mas rápida y eficiente, lo que esa sección contiene.
 - 20250603 He subido las piezas en formato .stl u .obj, para que sea aún mas facil imprimirlas, recuerda que tu laminador, el que sea, procesa perfectamente los ficheros .obj tal como lo hace con los ficheros .stl.
 
 > [!TIP]
