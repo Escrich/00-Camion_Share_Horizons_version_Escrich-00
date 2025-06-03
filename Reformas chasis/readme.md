@@ -2,7 +2,7 @@
 
 <br>
 <p align="left">
-<img src="https://github.com/Escrich/00-Camion_Share_Horizons_version_Escrich-00/blob/master/Reformas%20chasis/estructura.jpg" alt='Estructura , chasis y demás elementos mecánicos' width='60%'>
+<img src="https://github.com/Escrich/00-Camion_Share_Horizons_version_Escrich-00/blob/master/Reformas%20chasis/estructura.jpg" alt='Estructura, chasis y demás elementos mecánicos' width='60%'>
 </p>
 <br>
 
