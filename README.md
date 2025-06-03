@@ -12,7 +12,8 @@ La idea de mejorar, (desde mi punto de vista), el camión, no es porque fuese un
 lo cual era una buena excusa para ponerse a jugar, y crear piezas nuevas y buscarme así, nuevos problemas.
 
 Aquí os traigo los diseños modificados, los he grabado en formato .step, porque es un buen formato de intercambio, que pueden abrir la mayoría de programas de diseño, e incluso directamente los laminadores, 
-si a la larga ese formato supone un problema, no tengo inconveniente en volver a subir todas las piezas en formato .stl u .obj.
+
+- 20250603 He subido las piezas en formato .stl u .obj, para que sea aún mas facil imprimirlas, recuerda que tu laminador, el que sea, procesa perfectamente los ficheros .obj tal como lo hace con los ficheros .stl.
 
 > [!TIP]
 > La mayor parte de la información está en la zona de notas de trabajo, donde la mayoría de las notas  que escribí a mano sobre el papel, las he volcado sobre el PDF original, tambien hay información especifica en cada una de las secciones.
