@@ -1,5 +1,11 @@
 # Ruedas nuevas
 
+<br>
+<p align="left">
+<img src="https://github.com/Escrich/00-Camion_Share_Horizons_version_Escrich-00/blob/master/Ruedas%20y%20neumaticos%20nuevos/ruedas.jpg" alt='Ruedas nuevas, llantas y dos modelos de cubiertas' width='70%'>
+</p>
+<br>
+
 En este conjunto aparecen las ruedas diseñadas especificamente para el camión, en el se puede encontrar lo siguiente:
 
 - Un separador para montar la quinta rueda en la parte trasera, como una rueda de repuesto.
@@ -30,6 +36,13 @@ En este conjunto aparecen las ruedas diseñadas especificamente para el camión,
 
   Está hecha en TPU de 95A.
 
+<br>
+
+www.github.com/escrich
+  
+https://t.me/escrich
+  
+https://www.tiktok.com/@josemescrich
 
 <sub> 
 20250509 Jose M. Escrich 
