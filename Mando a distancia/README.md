@@ -23,6 +23,9 @@ si lo has hecho todo bien, el sistema saldrá andando a la primera, que por otra
 
 
 
+> [!IMPORTANT]
+> 20250827 Actualización del software del mando a distancia, como consecuencia de las actualizaciones de las librerías de Arduino.
+>
 
 
 > [!CAUTION]
@@ -31,7 +34,7 @@ si lo has hecho todo bien, el sistema saldrá andando a la primera, que por otra
 
 <br>
 
-> [!IMPORTANT]
+> [!WARNING]
 > Recuerda alimentar al Joystick con tan **solo 3'3 Voltios**, desde los pines de la placa del Wemos, o ESP32,
 > Es un problema muy común, alimentarla a 5 voltios, tal como pone en su serigrafía, haciendolo así, el camión se pondrá en marcha en cuanto conecte con el mando, y notarás una sensación de total falta de control.
 
