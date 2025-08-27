@@ -672,10 +672,10 @@ void loop() {
   // ----------------------------------------------------------------------------
 
   //Quita la linea justo debajo si quieres ver la mac address en el monitor serie, recuerda ponerlas despues para no perder tiempo de proceso
-  
+  /*
   Serial.println("Mac address del dispositivo:");
   Serial.println(WiFi.macAddress());
-  
+  */
   //Quita la linea justo encima si quieres ver la mac address en el monitor serie, recuerda ponerlas despues para no perder tiempo de proceso
 
   // */
