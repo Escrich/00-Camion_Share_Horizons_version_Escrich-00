@@ -28,13 +28,13 @@ si lo has hecho todo bien, el sistema saldrá andando a la primera, que por otra
 >
 
 
-> [!CAUTION]
+> [!WARNING]
 > Al construir el mando a distancia, no olvides, antes de aplicar tension al Wemos D1 MINI, haber ajustado externamente la fuente de alimentación, para una tensión de salida de entre **5'0 Voltios, y 5'1 Voltios**.
 > si no lo haces así, puedes destruir el microcontrolador, al aplicarle una tensión mas alta de la que puede aguantar.
 
 <br>
 
-> [!WARNING]
+> [!CAUTION]
 > Recuerda alimentar al Joystick con tan **solo 3'3 Voltios**, desde los pines de la placa del Wemos, o ESP32,
 > Es un problema muy común, alimentarla a 5 voltios, tal como pone en su serigrafía, haciendolo así, el camión se pondrá en marcha en cuanto conecte con el mando, y notarás una sensación de total falta de control.
 
