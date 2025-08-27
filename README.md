@@ -16,6 +16,7 @@ Aquí os traigo los diseños modificados, los he grabado en formato .step, porqu
 - 20250603 He añadido imagenes en cada sección, para ver de una manera mas rápida y eficiente, lo que esa sección contiene.
 - 20250603 He subido las piezas en formato .stl u .obj, para que sea aún mas facil imprimirlas, recuerda que tu laminador, el que sea, procesa perfectamente los ficheros .obj tal como lo hace con los ficheros .stl.
 - 20250603 Mejora de las instrucciones y tareas a efectuar con el mando a distancia.
+- 20250827 Actualización del software del camión y del mando a distancia, como consecuencia de las nuevas actualizaciones en las librerías de Arduino.
 
 > [!TIP]
 > La mayor parte de la información está en la zona de notas de trabajo, donde la mayoría de las notas  que escribí a mano sobre el papel, las he volcado sobre el PDF original, tambien hay información especifica en cada una de las secciones.
