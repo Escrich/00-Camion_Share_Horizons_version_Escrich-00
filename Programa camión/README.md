@@ -34,8 +34,9 @@ si lo has hecho todo bien, el sistema saldrá andando a la primera, que por otra
  - Otra cosa que tambien he añadido, tanto en el mando como en el camión, es una cosa mas bien estética, el led azul de la placa, ahora,
    se enciende o apaga a cada ciclo de programa, para poder comprobar de manera visual, que el programa está funcionando y no se ha quedado colgado.
 
-
-
+> [!IMPORTANT]
+> 20250827 Actualización del software del camión, como consecuencia de las actualizaciones de las librerías de Arduino
+>
 
 
 > [!TIP]
