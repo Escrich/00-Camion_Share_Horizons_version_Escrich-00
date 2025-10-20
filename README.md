@@ -38,7 +38,11 @@ Aquí os traigo los diseños modificados, los he grabado en formato .step, porqu
 > https://www.youtube.com/@SHAREHORIZONS
 
 <br>
+<br>
 
+- **Bueno, este es un trabajo que he hecho, pensando en que pueda servir de ayuda a los demás, si a alguien le sirve este trabajo, para no perder el tiempo que yo he necesitado perder, aunque sea uno solo, ya me doy por satisfecho, entonces mi objetivo se habrá cumplido, si necesitas ayuda, tienes dudas, o quieres comentar algo al respecto, además de que puedes hacerlo directamente aquí, recuerda que puedes encontrarme en las redes, y que estas son mis direcciones:**
+
+<br>
  
 www.github.com/escrich
   
@@ -48,6 +52,9 @@ https://t.me/escrich
   
 https://www.tiktok.com/@josemescrich
 
+
+https://www.youtube.com/@josem.escrich2610
+
 <sub>
-20250527 Jose M. Escrich 
+20251020 Jose M. Escrich 
 </sub>
